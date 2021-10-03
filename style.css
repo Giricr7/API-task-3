@@ -1,0 +1,17 @@
+.container {
+  text-align: center;
+}
+
+.table {
+  text-align: center;
+  width: fit-content;
+}
+
+tr:first-child{
+    background: black;
+    color: white;
+}
+
+tr:nth-child(2n+3){
+background: grey;
+}
