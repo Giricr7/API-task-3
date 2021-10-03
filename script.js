@@ -23,7 +23,7 @@ function SetData(currencies) {
         
         tr = table.insertRow(i+1);
         td = tr.insertCell();
-        td.innerHTML = acronyms[i];
+        td.innerHTML = acronyms[i].toUpperCase();
 
         td = tr.insertCell();
         td.innerHTML = currencies[acronyms[i]];
@@ -61,6 +61,7 @@ function filter(data) {
 
 }
 
+//clearing the nearby filter when switching to other
 function clearCurrency() {
     
     document.getElementById('inp_currency').value = ''
@@ -70,6 +71,7 @@ function clearAcronym() {
     document.getElementById('inp_acronym').value = ''
 }
 
+//calling the filter function
 function filterbyacro() {
 
     filter(0);

@@ -22,18 +22,18 @@
 
     <div class="container">
 
-      <div class="row">
+      <div class="row heading">
         <h1>Currencies</h1>
       </div>
 
-      <div class="row">
-        <div class="col-lg-6">
-          <label for="acronym">Search by Acronym</label>
-          <input type="text" placeholder="Serach here" onkeyup="filterbyacro()" id="inp_acronym" onfocus="clearCurrency()">
+      <div class="row filter_container">
+        <div class="col-lg-6 fliters_div">
+          <label for="acronym" class="label">Search by Acronym:</label>
+          <input type="text" class="filter" placeholder="Search here" onkeyup="filterbyacro()" id="inp_acronym" onfocus="clearCurrency()">
         </div>
-        <div class="col-lg-6">
-          <label for="currency">Search by Currency</label>
-          <input type="text" placeholder="Serach here" onkeyup="filterbycurr()" id="inp_currency" onfocus="clearAcronym()">
+        <div class="col-lg-6 fliters_div">
+          <label for="currency" class="label">Search by Currency:</label>
+          <input type="text" class="filter" placeholder="Search here" onkeyup="filterbycurr()" id="inp_currency" onfocus="clearAcronym()">
         </div>
       </div>
     </div>

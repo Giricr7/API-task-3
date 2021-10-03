@@ -1,17 +1,70 @@
 .container {
   text-align: center;
+  padding: 5%;
+  padding-top: 2%;
+  background-color: #424242;
+  border-radius: 20px;
 }
 
 .table {
   text-align: center;
   width: fit-content;
+  font-weight: bolder;
+  font-size: larger;
 }
 
-tr:first-child{
-    background: black;
-    color: white;
+tr:first-child {
+  background: black;
+  color: white;
+  font-weight: bolder;
 }
 
-tr:nth-child(2n+3){
-background: grey;
+tr:nth-child(2n + 3) {
+  background: grey;
+  color: white;
+  font-weight: bolder;
+}
+tr:nth-child(2n + 2) {
+  color: black;
+  font-weight: bolder;
+  background: white;
+}
+
+.heading {
+  padding: 3%;
+  color: white;
+}
+
+.filter {
+  border: 1px solid #cfd8dc;
+  border-radius: 20px;
+  text-align: center;
+  background: #cfd8dc;
+}
+
+.label {
+  font-weight: bolder;
+  font-size: large;
+  color: white;
+}
+
+.body {
+  background: #b0bec5;
+}
+
+.filter_container {
+  padding: 3%;
+  border: 1px solid black;
+  border-width: thick;
+  border-radius: 20px;
+}
+@media screen and (max-width: 720px) {
+  .fliters_div {
+    padding-top: 3%;
+  }
+
+  .table {
+    padding: 3%;
+    width: 80%;
+  }
 }
