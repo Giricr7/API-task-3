@@ -52,7 +52,6 @@ function filter(data) {
         td=rows[i].getElementsByTagName("td")[data];
         val= td.innerHTML;
         if(val.toUpperCase().indexOf(searchwords) > -1){
-        console.log(val.toUpperCase().indexOf(searchwords));
         rows[i].style.display='';
         }
         else
@@ -92,3 +91,4 @@ function filterbycurr() {
 
 //program execution starts here
 start();
+
